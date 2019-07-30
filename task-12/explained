@@ -1,0 +1,2 @@
+The solution of the reverse_me program outputs the string after decoding the ciphertext.
+It reverses the order by which plaintext is encoded into ciphertext, by calling the modified functions in reverse order.
