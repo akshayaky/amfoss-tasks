@@ -6,7 +6,7 @@ It is a header that declares sets of integer types having specified widths.
 
 ## What's the point of using `uint8_t`, `uint32_t`, `int32_t`, and `uint16_t` in a program?
 
-TODO
+These are the types in the stdint.h,which help to define an int with a specific bits.
 
 ## How many bytes is a `BYTE`, a `DWORD`, a `LONG`, and a `WORD`, respectively?
 
