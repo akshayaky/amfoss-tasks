@@ -1,0 +1,7 @@
+1. Check if the program was run with a single argument.
+2. Check if each of the characters is an alphabat.
+3.Covert the alphabets into appropriate integerswhich will act as the keys.
+4.Ask for the user's input of plain text.
+5.Iterate over each character:
+-rotate the letters preserving their case with the keys
+-keep it as it is if not an alphabet
