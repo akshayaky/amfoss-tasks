@@ -1,0 +1,13 @@
+1 check that the program was run with an argument.
+
+2 check if each of the characters is an int.
+
+3 Convert the string to an int
+
+4 Ask for user input for plaintext
+
+5 iterate over each character-
+ 
+-rotate the letters preserving their case
+
+-keep it as it is  if not an alphabet
