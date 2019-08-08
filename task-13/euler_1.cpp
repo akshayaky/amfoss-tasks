@@ -39,16 +39,13 @@ int main()
      long long sum[100000];
     for(int x=0;x<t;x++)
     {
-        sum[x] = 0;
-        cin>>n;
+         sum[x] = 0;
+         cin>>n;
          n_3 = no_of_terms(3,last_term(3,n),3);
          n_5 = no_of_terms(5,last_term(5,n),5);
-            n_15 = no_of_terms(15,last_term(15,n),15);
-            
-            //cout<<n_3<<"  "<<n_5<<"  "<<n_15<<endl;
-
-    sum[x] += ap(3,n_3,last_term(3,n)) + ap(5,n_5,last_term(5,n)) - ap(15,n_15,last_term(15,n));
-        //cout<<ap(3,n_3,last_term(3,n))<<"  "<<ap(5,n_5,last_term(5,n))<<"  "<<ap(15,n_15,last_term(15,n))<<endl;
+         n_15 = no_of_terms(15,last_term(15,n),15);
+         sum[x] += ap(3,n_3,last_term(3,n)) + ap(5,n_5,last_term(5,n)) - ap(15,n_15,last_term(15,n)); 
+    
     }
     for(int x=0;x<t;x++)
     {
