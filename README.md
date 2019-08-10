@@ -6,7 +6,7 @@
 | **S.no** |   **Task No.**    | **Task Name**             | **Results** |
 | ---- | ----------- | --------------------- | ------- |
 |      |             |                       |         |
-| 1.)  |  1          | [Star all the amfoss repositoris](/task-1)           | - Stared all the amfoss repositories. |
+| 1.)  |  1          | [Star all the amfoss repositoris](/task-1)           |  Stared all the amfoss repositories. |
 | 2.)  |  2          | [Programming](/task-2) | Tried and completed the problems in both [HackerRank](/task-2/HackerRank) and [Codeforces](/task-2/Codeforces). |
 | 3.)  |  9         | [Setup a Simple Personal Website](/task-9)       |  Hosted a website on GitHub. |
 |  4.) |  8         | [Captcha Breaking](/task-8) | Created a script in Python3 with the help of Pytesseract and PIL libraries.    |
