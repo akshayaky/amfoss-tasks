@@ -18,7 +18,7 @@ def shift_(x):
     return n
 
 def decode(x):
-  return bytearray.fromhex(x).decode() //converts back from hex
+  return bytearray.fromhex(x).decode()  #converts back from hex
 
 if __name__=="__main__":
 
