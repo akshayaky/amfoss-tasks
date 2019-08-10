@@ -1,6 +1,5 @@
 import string
 
-
 def xor(x):
     return ''.join(chr(ord(i)^10) for i in x)
 
@@ -18,14 +17,16 @@ def shift_(x):
             n.append(digits[(digits.index(i)-3)%10])
     return n
 
+def decode(x):
+  return bytearray.fromhex(x).decode() //converts back from hex
 
 if __name__=="__main__":
 
-    your_code =shift_(xor(bytearray.fromhex("667b6c7d63677f3c733c7f323c3c7b333e7b3c3c7f3e7b333e3232393c3d3268").decode()))
+    cipher_text = "667b6c7d63677f3c733c7f323c3c7b333e7b3c3c7f3e7b333e3232393c3d3268"
+    your_code =shift_(xor(decode(cipher_text)))
 
     code = ""
 
     for k in your_code:
       code += k
     print(code)
-
