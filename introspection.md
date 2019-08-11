@@ -2,7 +2,7 @@
 
 I am computer enthusiast and have been learning in the CS  for the past two years though it is mostly limited to programming. I have leanrned C++ and MySQL
 through my school education. I also leaned python on my own after the class 12 exams. I have tried my level best in completing the  tasks I completed,though I wish I did the javascript and Go tasks as I have not worked with these languages and could learned them for the tasks.
-Though I am interseted in programming and other CS stuff, I was a bit lazy to learn new things other than those taught at school.
+Though I am interseted in programming and other CS stuff, I was a bit lazy to learn new things other than those taught at school. I am dedicated in my work and can spend many hours doing the same.
 
 
 
