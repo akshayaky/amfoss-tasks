@@ -73,7 +73,7 @@ int main(int argc, char *argv[])
             fread(&triple, sizeof(RGBTRIPLE), 1, inptr);
 
             
-            if( triple.rgbtRed >=0xfe )//|| triple.rgbtRed == 0xfd)
+            if( triple.rgbtRed >=0xfe )
             {
                 triple.rgbtRed = 0x00;
                 triple.rgbtGreen = 0x00;
