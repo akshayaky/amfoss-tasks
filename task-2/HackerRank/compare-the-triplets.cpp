@@ -35,6 +35,6 @@ int main()
 		
 	p result;
 	result = compareTriplets(a,b);
-		cout<<result.arr[0]<<" "<<result.arr[1];
+	cout<<result.arr[0]<<" "<<result.arr[1];
 		
 }
