@@ -1,40 +1,36 @@
 #include<iostream>
 using namespace std;
 
+int score[2];
 
-struct p{
-	int arr[2];
-};
-struct p compareTriplets(int a[3],int b[3])
+void compareTriplets(int a[3],int b[3])
 {
-	p score;
-	score.arr[0]= 0;
-	score.arr[1]= 0;
-	
-	for(int x=0;x<3;x++)
-	{
-		if(a[x]>b[x])
-			score.arr[0]+=1;
-		else if(a[x]<b[x])
-			score.arr[1]+=1;
-	}
-	return score;
-	
+    score[0]= 0;
+    score[1]= 0;
+    
+    for(int x=0;x<3;x++)
+    {
+        if(a[x]>b[x])
+            score[0]+=1;
+        else if(a[x]<b[x])
+            score[1]+=1;
+    }
+    
+    
 }
 
 
 int main()
 {
-	int a[3],b[3];
+    int a[3],b[3];
 
-	for(int x=0;x<3;x++)
-		cin>>a[x];
-	
-	for(int x=0;x<3;x++)
-		cin>>b[x];
-		
-	p result;
-	result = compareTriplets(a,b);
-	cout<<result.arr[0]<<" "<<result.arr[1];
-		
+    for(int x=0;x<3;x++)
+        cin>>a[x];
+    
+    for(int x=0;x<3;x++)
+        cin>>b[x];
+        
+    compareTriplets(a,b);
+    cout<<score[0]<<" "<<score[1];
+        
 }
