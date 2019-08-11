@@ -6,10 +6,10 @@
 using namespace std;
 
 
-int primeorNot(int num) //Checks whether a given number is a prime or not.
+int primeorNot(int num)
 {
     
-    for(int x=2;x<num;x++)
+    for(int x=2;x<sqrt(num)+1;x++)
     {
         if(num%x==0)
             {
@@ -19,35 +19,44 @@ int primeorNot(int num) //Checks whether a given number is a prime or not.
         return 1;    
 }
 
+
+
 int main()
 {
     int t;
     long long n;
     cin>>t;
-    int lar[10];
-    for(int x=0;x<t;x++) //loop to iterate over all the testcases
+    long long lar[10];
+    for(int x=0;x<t;x++)
     {
         cin>>n;
         if(primeorNot(n))
         {
             lar[x]=n;
-            continue;
+            
         }
-        
-        lar[x] = 2;
-        for(int y=2;y<=n;y++) 
+        else
+        {
+            lar[x] = 2;
+            for(int y=3;y<=n;y +=2)
         {
             if(n%y==0)
             {
                 if(primeorNot(y))
                 {
                     if(lar[x]<y)
-                        {lar[x]=y;
-                        n = n/y;
-                        }
+                    {
+                        lar[x]=y;
                         
-                }    
+                    }
+                    
+                        
+                }
+                n=n/y; //reduces the number of loop executions
+                 
             }
+            
+        }
         }
         
     }
@@ -55,5 +64,8 @@ int main()
     {
         cout<<lar[x]<<endl;
     }
+}
+
     
 }
+
