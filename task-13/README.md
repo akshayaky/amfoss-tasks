@@ -11,7 +11,7 @@ I did all the Euler problems, though two of the solutions don't satisfy all the 
 
 
 
-### Project Euler #1: Multiples of 3 and 5
+### 1.Project Euler #1: Multiples of 3 and 5
 
 Find the sum of all the multiples  of 3 or 5 below N.
 
@@ -24,7 +24,7 @@ The Testcase failure for this solution is probably due to very large numbers whi
 Can be solved using string as numbers. Trying to implement the same.
 
 
-### Project Euler #2: Even Fibonacci numbers
+### 2.Project Euler #2: Even Fibonacci numbers
 
 Find the sum of Even valued terms of the Fibonacci series less than N .
 
@@ -38,7 +38,7 @@ Find the sum of Even valued terms of the Fibonacci series less than N .
 This solution worked for all the testcases in HackerRank.
 
 
-### Project Euler #3: Largest prime factor
+### 3.Project Euler #3: Largest prime factor
 
 Find the largest prime factor of a number N.
 
@@ -51,7 +51,7 @@ Find the largest prime factor of a number N.
 
 
 
-### Project Euler #4: Largest palindrome product
+### 4.Project Euler #4: Largest palindrome product
 Find the largest palindrome made from the product of two 3-digit numbers which is less than N.
 
 #### Approach
@@ -63,7 +63,7 @@ Find the largest palindrome made from the product of two 3-digit numbers which i
 5. The two inner loops are used to check whether multiplying the loop variables gets us the outer loop varible which is a pallindrome.If it does,then it is breaked out of all the loops.
 
 
-### Project Euler #5: Smallest multiple
+### 5.Project Euler #5: Smallest multiple
 Find the smallest number which is divisible by all the numbers divisible from 1 to N.
 
 #### Approach
