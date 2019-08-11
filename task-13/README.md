@@ -51,3 +51,23 @@ Find the largest prime factor of a number N.
 
 
 
+### Project Euler #4: Largest palindrome product
+Find the largest palindrome made from the product of two 3-digit numbers which is less than N.
+
+#### Approach
+
+1. A _for_ loop interates from N-1 to 101101,which is the largest pallindrome which is a product of two 3-digit numbers.
+2. Inside the loop, there is another loop which iterates from 999,the largest 3-digit number to 100,smallest 3 digit number.
+3. There is yet another loop inside the inner loop similar to it.
+4. The two inner nested loops are only executed if the outer loop varible is a pallindrome.
+5. The two inner loops are used to check whether multiplying the loop variables gets us the outer loop varible which is a pallindrome.If it does,then it is breaked out of all the loops.
+
+
+### Project Euler #5: Smallest multiple
+Find the smallest number which is divisible by all the numbers divisible from 1 to N.
+
+#### Approach
+
+!. A _for_ loop iterates from 1 and increments it untill it finds a number divisible by all numbers from 1-N.
+2. Inside this loop another loop iterates from 1 to N and checks if it is divisible all of them,else breaks from the inner loop.
+3. If it is divisible by all the numbers then its stored in an array for all the testcases.
