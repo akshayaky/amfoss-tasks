@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
-
-
+ 
+ 
 int main()
 {
 	int n,k,num = 0,arr[50];
