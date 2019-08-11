@@ -16,5 +16,6 @@
 | 6)  |  12         |    [Python Source](/task-12)     |Created a python script to decode the string which was encoded using [this](https://drive.google.com/file/d/0B3sOPp4yzeLTdHZiazhmNFZ2VEE/view) script.|
 |      |             |                       |     |
 | 7)  | 13 | [Project Euler](/task-13)      |  Used both C++ and python3 to solve the problems.|
+| 8)  |7|[Rusted Email](/task-7)|Used Rust programming Language to make a script which checks whether an email address is valid.Used regex crate to complete the task.|
 
 
