@@ -1,15 +1,15 @@
 ## Why should you choose me?
 
 I am computer enthusiast and have been learning in the CS  for the past two years though it is mostly limited to programming. I have leanrned C++ and MySQL
-through my school education. I also leaned python on my own after the class 12 exams. I have tried my level best in completing the  tasks I completed,though I wish I did the javascript and Go tasks as I have not worked with these languages and could learned them for the tasks.
-Though I am interseted in programming and other CS stuff, I was a bit lazy to learn new things other than those taught at school. I am dedicated in my work and can spend many hours doing the same.
+through my school education. I also leaned python on my own after the class 12 exams. I have tried my level best in completing the  tasks I completed,though I wish I did the javascript and Go tasks as I have not worked with these languages and could learned them for the tasks. I am dedicated in my work and can spend many hours doing the same.
+Though I am interseted in programming and other CS stuff, I was a bit lazy to learn new things other than those taught at school.
 
 
 
 ## How was I before joining and how am i now?
 Before joining I was not actively doing anything other than those taught at school. Even when I planned to do something on my own I didn't learn anything new rather I did something with things I knew already.
 But doing the tasks I was ready to learn new things and do them. Before, I thought that I knew everything when I learned one language.But now I know that Computer Science is a vast
-field and I knew almost nothing  of it.Before joining here, I checked out the previous amfoss-tasks lists I and thought that I will not able to complete anything except one or two but I worked hard and completed many of them.
+field and I knew almost nothing  of it.Before joining here, I checked out the previous amfoss-tasks lists I and thought that I will not able to complete anything except one or two but I worked hard and completed many of them and would have done more if time permitted.
 
 
 ## My comments regarding the Selection Process
