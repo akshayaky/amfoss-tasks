@@ -28,26 +28,28 @@ int main()
 	{
 		lar_pal[x] = 0;
 		cin>>n;
-		for(int y=n-1;y>1;y--)
+		for(int y=n-1;y>=101101;y--)
 		{
 			if(pallindrome(y))
 			{
-					for(int i=999;i>=100;i-- )
+				for(int i=999;i>=100;i-- )
+				{
+					for(int j=999;j>=100;j--)
 					{
-						for(int j=999;j>=100;j--)
+						if(i*j == y)
 						{
-							if(i*j == y)
-							{
-								lar_pal[x] = y;
-								break;
-							}
+							lar_pal[x] = y;
+							break;
+						}
 							
 									
-						}
-						if(lar_pal[x]!=0)
-							break;
-					}		
+					}
+					if(lar_pal[x]!=0)
+						break;
+				}			
 			}
+			if(lar_pal[x]!=0)
+				break;
 		}
 		
 	}
