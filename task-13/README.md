@@ -68,6 +68,6 @@ Find the smallest number which is divisible by all the numbers divisible from 1 
 
 #### Approach
 
-!. A _for_ loop iterates from 1 and increments it untill it finds a number divisible by all numbers from 1-N.
+1. A _for_ loop iterates from 1 and increments it untill it finds a number divisible by all numbers from 1-N.
 2. Inside this loop another loop iterates from 1 to N and checks if it is divisible all of them,else breaks from the inner loop.
 3. If it is divisible by all the numbers then its stored in an array for all the testcases.
