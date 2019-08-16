@@ -23,5 +23,6 @@ I did all the tasks listed below.
 |      |             |                       |     |
 | 7)  | 13 | [Project Euler](/task-13)      |  Used both C++ and python3 to solve the problems.|
 | 8)  |7|[Rusted Email](/task-7)|Used Rust programming Language to make a script which checks whether an email address is valid.Used regex crate to complete the task.|
+|9)|0|[Install Ubuntu 18.04](/task-0)|Installed and Dual Booted Ubuntu 18.04 into my Laptop|
 
 
