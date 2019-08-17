@@ -1,0 +1,102 @@
+<html>
+<head>
+<body background="https://designshack.net/wp-content/uploads/tips-for-using-background-textures-in-web-design.jpg">
+<center>
+<h2>Search a Username</h2>
+
+
+<p><b>Enter the username you want to search</b></p>
+<input type="text" id="myText" placeholder="Enter the username">
+
+
+
+
+<button onclick="myFunction()">Search</button>
+
+<br><div id="Username"></div>
+<br><div id = "noUser"></div>
+<br><div id="Name"></div></br>
+<br><div id="Bio"></div></br>
+<br>
+<br><div id="Avatar_named"></div><div>
+<br><img id="Avatar" height="0" width="0"></img></br>
+<br><div id="Identicon_named"></div>
+<br><img id = "Identicon" height = "0" width = "0"></img></br>
+</center>
+
+
+
+<script>
+        
+            function myFunction() {
+                var login = document.getElementById("myText").value;
+                var query = `query get_details($login: String!) {
+                                user(login: $login) {
+                                    login
+                                    name
+                                    avatarUrl
+                                    bio
+                                }
+                            }`
+                fetch('https://api.github.com/graphql', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json',
+                        'Authorization': 'bearer  #######################',//Instead of the '#' use the auth tokens for Github
+                    },
+                    body: JSON.stringify({
+                        query,
+                        variables: { login },
+                    })
+                })
+                    .then(r => r.json())
+                    .then(data => {
+                            if(data.data.user==null)
+                            {
+                                document.getElementById("noUser").hidden= false;
+                                document.getElementById("noUser").innerHTML = "No user Exists";
+                                document.getElementById("Avatar_named").hidden = true;
+                                document.getElementById("Identicon_named").hidden = true;
+                                document.getElementById("Username").hidden = true;
+                                document.getElementById("Name").hidden = true;
+                                document.getElementById("Bio").hidden= true;
+                                document.getElementById("Avatar").hidden = true;
+                                document.getElementById("Identicon").hidden = true;
+                            
+                            }
+                            else
+                            {
+                            document.getElementById("Avatar_named").innerHTML = "Avatar";
+                            document.getElementById("Identicon_named").innerHTML = "Identicon";
+                            document.getElementById("Username").innerHTML = "Username: " + data.data.user.login;
+                            document.getElementById("Name").innerHTML = "Name: " + data.data.user.name;
+                            document.getElementById("Bio").innerHTML = "Bio: " + data.data.user.bio;
+                            document.getElementById("Avatar").src = data.data.user.avatarUrl;
+                            document.getElementById("Avatar").height = 200;
+                            document.getElementById("Avatar").width = 300;
+                            document.getElementById("Identicon").src = "https://identicons.github.com/" + data.data.user.login +".png";
+                            document.getElementById("Identicon").height = 200;
+                            document.getElementById("Identicon").width = 300;
+                            
+                            document.getElementById("noUser").hidden= true;
+                            document.getElementById("Avatar_named").hidden = false;
+                            document.getElementById("Identicon_named").hidden = false;
+                            document.getElementById("Username").hidden = false;
+                            document.getElementById("Name").hidden = false;
+                            document.getElementById("Bio").hidden= false;
+                            document.getElementById("Avatar").hidden = false;
+                            document.getElementById("Identicon").hidden = false;   
+                    
+                            }
+                    }
+                    )
+                    .catch(function(err){
+                        console.log('Error ', err);
+                    });
+            }
+        </script>
+
+
+    </body>
+</html>
