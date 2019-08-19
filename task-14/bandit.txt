@@ -1,0 +1,24 @@
+
+0)bandit0- Given in the website
+
+1) boJ9jbbUNNfktd78OOpsqOltutMc3MY1   - ls  cat readme
+
+2) CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9 - ls   cat ./-
+
+3) UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK - ls  cat 'spaces in this filename'
+
+4) pIwrPrtPN36QITSp3EQaw936yaFoFgAB  -ls, find, cat ./inhere/.hidden
+
+5) koReBOKuIDDepwhWk7jZC0RTdopnAYKh  -ls, cd ./inhere, file ./*(Showed if each file e=was data or ASCII text), cat ./-file07
+
+
+6) DXjZPULLxYr17uwoI01bNLQbtFemEgo7   -ls , cd ./inhere   find -size 1033c(./maybehere07/.file2),  cat ./maybehere07/.file2
+
+
+7) HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs  -find -group bandit6 -user bandit7(I found the only file which did not have a permission denied or no such directory )
+
+
+8) cvX2JJa4CFALtqS87jk27qwqGhBM9plV   ls , grep 'millionth'  ./data.txt
+
+
+ 
