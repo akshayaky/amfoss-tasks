@@ -1,6 +1,6 @@
  ## Why should you choose me?
 
-I am a computer enthusiast and have been learning in the CS for the past two years though it is mostly limited to programming. I have learned C++ and MySQL through my school education. I also learned python on my own after the class 12 exams. I have tried my level best in completing the tasks I completed, though I wish I did the javascript and Go tasks as I have not worked with these languages and could learn them for the tasks. I am dedicated to my work and can spend many hours doing the same. Though I am interested in programming and other CS stuff, I was a bit lazy to learn new things other than those taught at school.
+I am a computer enthusiast and have been learning in the CS for the past two years though it is mostly limited to programming. I have learned C++ and MySQL through my school education. I also learned python on my own after the class 12 exams. I have tried my level best in completing the tasks I completed, though I wish I did the  Go task as I have not worked with this language and could learn it for the task. I am dedicated to my work and can spend many hours doing the same. Though I am interested in programming and other CS stuff, I was a bit lazy to learn new things other than those taught at school.
 
 
 
