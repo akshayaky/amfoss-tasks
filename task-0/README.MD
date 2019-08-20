@@ -1,0 +1,3 @@
+## 0. Install Ubuntu 18.04
+
+I thought I would not do this task as I was scared I would mess up my PC. Even then I tried installing it.I succeeded in my second attempt. In my first attempt I flashed a Pendrive and installed Ubuntu.But when I restarted the PC it directed booted into windows without showing the Grub screen.I tried boot repair from both ubuntu(from flashed pen drive) and Boot repair but it failed.So I gave up as I had given much of time into this. But after the deadline for submission was over Venu chettan asked me to Install Ubuntu asap.I did what he said and tried again.I reinstalled Ubuntu and this time it worked.I had to choose the grub screen after pressinh F12,so I changed the boot order and it booted into Grub.
