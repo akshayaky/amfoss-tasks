@@ -1,0 +1,11 @@
+[package]
+name = "email" # the name of the package
+version = "0.1.0"    # the current version, obeying semver
+authors = ["Alice <a@example.com>", "Bob <b@example.com>"]
+
+[dependencies]
+regex = "1"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"

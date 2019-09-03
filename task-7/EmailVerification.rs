@@ -7,7 +7,7 @@ fn main() {
     println!("Enter Email id: ",);
     let mut email = String::new();
     std::io::stdin().read_line(&mut email).unwrap();
-    let mut email = email.trim();;
+    let mut email = email.trim();
     if (re.is_match(&mut email)) == true
     {
         println!("Email Address is Valid.",);
