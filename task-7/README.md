@@ -13,6 +13,8 @@ Learned about Regular Expressions and rust programming language.
 I Installed rust but was not able to compile the program due to 'linker.exe' error and that VS should be installed on my system.I downloaded and installed Visual Studio Builder tools but still nothing changed. 
 So I had to compile the code online, and the site which supported regex didn't allow inputs, so I had to make the script without input.
 
+I completed the input functionality as of now.
+
 
 #### Email syntax
 An email address has three parts:
