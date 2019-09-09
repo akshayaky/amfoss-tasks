@@ -16,16 +16,16 @@ while b<20 do
     begin
         pr = links[a].text.strip.include? "https"
         pr1 = links[a+1].text.strip.include? "https"
-    
+       
         if pr1
-            k =  links[a].text.strip
-            p k.tr('"'," ")
+            k =  links[a].text.strip.delete('\"')
+            p k.tr('>',"/")
             pr1 = false
             b = b + 1
-    
+            
         end
         if pr
-            p links[a].text.strip
+            p links[a].text.strip.delete(' ').tr('›','/')
             b = b+1
             pr = false
             puts "\n"
