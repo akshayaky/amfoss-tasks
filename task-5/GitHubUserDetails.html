@@ -1,33 +1,177 @@
+     
 <html>
 <head>
-<body background="https://designshack.net/wp-content/uploads/tips-for-using-background-textures-in-web-design.jpg">
 <center>
-<h2>Search a Username</h2>
+<style>
 
 
-<p><b>Enter the username you want to search</b></p>
-<input type="text" id="myText" placeholder="Enter the username">
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background: #70bg32;
+    background-repeat:no-repeat;
+    background: -webkit-linear-gradient( to left top, purple, skyblue);
+    background: -moz-linear-gradient(  to left top, purple, skyblue);
+    background: -ms-linear-gradient( to left top, purple, skyblue);
+    background: -o-linear-gradient( to left top, purple, skyblue);
+    background: linear-gradient(  to left top, purple, skyblue);
+}
 
 
 
+input[type=text] {
+  width: 250px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 2px;
+  font-size: 16px;
+  font-size-adjust: inherit;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 5px 5px 5px 5px;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
 
-<button onclick="myFunction()">Search</button>
+input[type=text]:focus {
+  width: 100%;
+}
 
-<br><div id="Username"></div>
-<br><div id = "noUser"></div>
-<br><div id="Name"></div></br>
-<br><div id="Bio"></div></br>
+
+.header {
+  
+  padding: 2px;
+  text-align: center;
+}
+
+.column {
+  float: left;
+  width:25%
+}
+
+
+.column.side {
+  width: 25%;
+  float:right
+}
+
+
+.column.middle {
+  width: 50%;
+  float:center
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+h2 {
+  text-align: center;
+  color: orange;
+  font-size: 50;
+  font-style: oblique
+}
+
+
+
+p1{
+
+color: rgb(6, 240, 162);
+font-size: 30
+}
+
+
+
+p2{
+
+color: rgb(9, 236, 46);
+font-size: 30
+}
+
+
+
+p4{
+
+color: rgb(246, 250, 0);
+font-size: 20
+}
+
+p3 {
+  text-transform: uppercase;
+  color: rgb(51, 46, 46);
+  font-size: 30
+}
+
+
+
+</style>
+<div class="header">
+        <h2>Search a Username</h2>
+        <p1><b>Username</b></p1>
+        <br><input type="text" id="myText" placeholder="Enter the username">
+       <br><button id = "button"onclick="myFunction()">Search</button>
+        <p3>
+            <br><div id = "noUser" hidden = true></div>   
+        </p3>
+        
+</div>
+
+
+<div class="row">
+        <div class="column">
+                <img id = "Avatar" style="width:100%" >
+        </div>
+        <center>
+        <div class="column middle">
+                
+
+                <p2><br><div id="Username1" hidden = true><b>Username</b></div></p2>
+                <p4><br><div id="Username" hidden = true></div></p4>
+                
+                
+                <p2><br><div id="Name1" hidden = true><b>Name</b></div></p2>
+                <p4><br><br><div id="Name" hidden = true></div></br></p4>
+                
+                <p2><br><div id="Bio1" hidden = true><b>Bio</b></div></p2>
+                <p4><br><br><div id="Bio" hidden = true></div></p4>
+                
+
+        </div>
+    </center>
+        
+        <div class="column side">
+                <img  id = "Identicon"   style="width:100%" >
+        </div>
+      </div>
+
+<a>
+
 <br>
-<br><div id="Avatar_named"></div><div>
-<br><img id="Avatar" height="0" width="0"></img></br>
-<br><div id="Identicon_named"></div>
-<br><img id = "Identicon" height = "0" width = "0"></img></br>
+
+
 </center>
 
 
 
 <script>
         
+
+var input = document.getElementById("myText");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("button").click();
+  }
+});
+
             function myFunction() {
                 var login = document.getElementById("myText").value;
                 var query = `query get_details($login: String!) {
@@ -43,7 +187,7 @@
                     headers: {
                         'Content-Type': 'application/json',
                         'Accept': 'application/json',
-                        'Authorization': 'bearer  #######################',//Instead of the '#' use the auth tokens for Github
+                        'Authorization': 'bearer ##############################',//api key is used here for authentication with github.
                     },
                     body: JSON.stringify({
                         query,
@@ -56,35 +200,60 @@
                             {
                                 document.getElementById("noUser").hidden= false;
                                 document.getElementById("noUser").innerHTML = "No user Exists";
-                                document.getElementById("Avatar_named").hidden = true;
-                                document.getElementById("Identicon_named").hidden = true;
                                 document.getElementById("Username").hidden = true;
                                 document.getElementById("Name").hidden = true;
                                 document.getElementById("Bio").hidden= true;
+                                document.getElementById("Username1").hidden = true;
+                                document.getElementById("Name1").hidden = true;
+                                document.getElementById("Bio1").hidden= true;
                                 document.getElementById("Avatar").hidden = true;
                                 document.getElementById("Identicon").hidden = true;
                             
                             }
                             else
                             {
-                            document.getElementById("Avatar_named").innerHTML = "Avatar";
-                            document.getElementById("Identicon_named").innerHTML = "Identicon";
-                            document.getElementById("Username").innerHTML = "Username: " + data.data.user.login;
-                            document.getElementById("Name").innerHTML = "Name: " + data.data.user.name;
-                            document.getElementById("Bio").innerHTML = "Bio: " + data.data.user.bio;
+                            document.getElementById("Username").innerHTML = data.data.user.login;
+                            document.getElementById("Name").innerHTML = data.data.user.name;
+                            document.getElementById("Bio").innerHTML =  data.data.user.bio;
                             document.getElementById("Avatar").src = data.data.user.avatarUrl;
-                            document.getElementById("Avatar").height = 200;
+                            document.getElementById("Avatar").height = 400;
                             document.getElementById("Avatar").width = 300;
-                            document.getElementById("Identicon").src = "https://identicons.github.com/" + data.data.user.login +".png";
-                            document.getElementById("Identicon").height = 200;
+                            document.getElementById("Avatar").style ="border:5px solid black"
+                            document.getElementById("Identicon").src = "https://identicons.github.com/"
+                             + data.data.user.login +".png";
+                            document.getElementById("Identicon").height = 400;
                             document.getElementById("Identicon").width = 300;
+                            document.getElementById("Identicon").style="border:5px solid black"
                             
                             document.getElementById("noUser").hidden= true;
-                            document.getElementById("Avatar_named").hidden = false;
-                            document.getElementById("Identicon_named").hidden = false;
                             document.getElementById("Username").hidden = false;
                             document.getElementById("Name").hidden = false;
                             document.getElementById("Bio").hidden= false;
+                            if(data.data.user.login != null)
+                            {
+                              document.getElementById("Username1").hidden = false;
+                            }
+                            else
+                            {
+                              document.getElementById("Username1").hidden = true;
+                            }
+                            if(data.data.user.name != null)
+                            {
+                              document.getElementById("Name1").hidden = false;
+                            }
+                            else
+                            {
+                              document.getElementById("Name1").hidden = true;
+                            }
+                            if(data.data.user.bio != null)
+                            {
+                              document.getElementById("Bio1").hidden = false;
+                            }
+                            else
+                            {
+                              document.getElementById("Bio1").hidden = true;
+                            }
+                          
                             document.getElementById("Avatar").hidden = false;
                             document.getElementById("Identicon").hidden = false;   
                     
@@ -100,3 +269,4 @@
 
     </body>
 </html>
+
