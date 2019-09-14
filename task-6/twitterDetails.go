@@ -81,7 +81,7 @@ func getClient(creds *Credentials, input *string) (*twitter.Client, error) {
 	}
 
 	//Array all the user details that is to be written in a text file
-	details := []string{"Name : ", user.Name, "Description : ", user.Description, "followers : ", strconv.Itoa(user.FollowersCount), "following : ", strconv.Itoa(user.FriendsCount), "Location : ", user.Location, "URL : ", user.URL, "Created At : ", user.CreatedAt}
+	details := []string{"Twitter Handle : ", user.ScreenName, "Name :", user.Name, "Description :", user.Description, "followers :", strconv.Itoa(user.FollowersCount), "following :", strconv.Itoa(user.FriendsCount), "Location :", user.Location, "URL :", user.URL, "Created At :", user.CreatedAt}
 
 	//loop which iterates over all the elements of the array details and writes it into a file,goes to newline after every two elements
 	for k, v := range details {
