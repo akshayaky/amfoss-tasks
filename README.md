@@ -27,5 +27,6 @@ I did all the tasks listed below.
 |10)|5|[Get it using Javascript:](/task-5)|Created a website using HTML and javascript which gets the details of the GitHub user by providing the username.|
 |11)|14|[Bandit](/task-14)|Completed Bandit upto level-8.|
 |12)|3|[Google Scraping using Ruby](/task-3)|Created a script in ruby which prints top ten results of the inputted keyword.|
+|13)|6|[CLI App using Go](/task-6)|Created a CLI app which writes the twitter account details of a file from the input of Twitter-handle.|
 
 
