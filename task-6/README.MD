@@ -13,3 +13,12 @@ Created a CLI app which takes the twitter handle as input and gives the output i
 I had to first authenticate with twitter which needed a twitter Developer account. After the authentication part, I was able to print the user details from the twitter- handle hard-coded into the script.Then I used the flag package for input and was able to display the details of the inputted twitter-handle. I proceeded with the writing into the file. I used the os package for this.
 
 All this done I completed the task.
+
+### How to run the program
+
+To run the program use the following command
+
+``` go run appp.go -user Twitter-handle ```
+
+where in place of Twitter-handle use the twitter-handle of the user.
+This will display details of the user and will also save the details in a textfile named userDetails.
