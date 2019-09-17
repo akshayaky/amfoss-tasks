@@ -18,7 +18,7 @@ All this done I completed the task.
 
 To run the program use the following command
 
-``` go run appp.go -user Twitter-handle ```
+``` go run twitterDetails.go -user Twitter-handle ```
 
 where in place of Twitter-handle use the twitter-handle of the user.
 This will display details of the user and will also save the details in a textfile named userDetails.
