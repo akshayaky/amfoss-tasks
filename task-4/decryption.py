@@ -8,7 +8,7 @@ import string
 
 l1 = ['sabefgijklmnopqrtuvwyABCDEFGHIJKLMNOPQRSTVWXYZ', 'ANBCDEFGHIJKLMOQRSUVWXYZ', 'AMCDEFHIJKLNOPQRSTUWXYZ', 'adbcefghijklmnopqrstuvyz', 'ahbdefgijklmnopquvwxyzABCDFGHIJKLMNOPQRSTUVWXYZ']
 
-l2 = [i+j+k+l+m for i in l1[0] for j in l1[1] for k in l1[2] for l in l1[3] for m in l1[4]] #all the combination of 
+l2 = [i+j+k+l+m for i in l1[0] for j in l1[1] for k in l1[2] for l in l1[3] for m in l1[4]] #all the possible key combinations
 key = ""
 ciphertext = ""
 plaintext = ""
