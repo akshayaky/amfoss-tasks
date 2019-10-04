@@ -28,5 +28,6 @@ I did all the tasks listed below.
 |11)|14|[Bandit](/task-14)|Completed Bandit upto level-11.|
 |12)|3|[Google Scraping using Ruby](/task-3)|Created a script in ruby which prints top ten results of the inputted keyword.|
 |13)|6|[CLI App using Go](/task-6)|Created a CLI app which writes the twitter account details of a file from the input of Twitter-handle.|
+|14)|4|[Advanced XOR](/task-4)|Created two scripts which filters the key combinations and decrypts the ciphertext|
 
 
