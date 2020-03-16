@@ -28,4 +28,4 @@ the script stored that in a list. Inside the list each of the elements is a stri
 
 This reduced the key combinations to 30 million.
 
-The ciphertext provided was defective so I created a ciphertext myself and after proper changes I got the plaintext.s
+The ciphertext provided was defective so I created a ciphertext myself and after proper changes I got the plaintext.
